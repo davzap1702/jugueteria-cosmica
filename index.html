@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jugueteria Cosmica | Inicio</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header class="main-header">
-
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="main-header container">
+      <div class="main-header__nav-container">
         <div class="main-header__logo-container">
+          <img src="/img/header/logo.png" alt="Logo" />
         </div>
-        <div class="main-header__search-form-container">
+
+        <div class="main-header__main-nav-container">
+          <nav class="main-nav">
+            <ul class="main-nav__list u-text-center hide">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Inicio</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Alta</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Nosotros</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="main-header__actions-container">
+        <div class="main-header__search-form-container hide">
+          <input
+            class="main-header__search-input"
+            type="text"
+            placeholder="Mario Bros, Monopatín, etc"
+          />
+        </div>
+        <div class="main-header__search-form-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="main-header__cart-button-container">
+          <i class="fa-solid fa-cart-shopping"></i>
         </div>
-        <div class="main-header__hamburger-button-container">
+        <div
+          id="hamburger-menu"
+          class="main-header__hamburger-button-container"
+        >
+          <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="main-header__main-nav-container">
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Inicio</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Alta</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Nosotros</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Contacto</a>
-                    </li>    
-                </ul>
-            </nav>
-        </div>
+      </div>
     </header>
 
-    
     <main>
-        <section class="section-cards">
-        </section>
-    
+      <section class="section-cards"></section>
     </main>
-    <footer class="main-footer">
-    </footer>
-
-</body>
+    <footer class="main-footer"></footer>
+    <script
+      src="https://kit.fontawesome.com/bdade64700.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -4,3 +4,8 @@
 
 //vendors
 @use './vendors/normalize';
+
+//components
+@use './components/header';
+@use './components/buttons';
+// @use './components/search-input';
