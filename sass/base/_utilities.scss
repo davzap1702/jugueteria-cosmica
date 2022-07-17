@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Rubik:wght@300;400;500;700&display=swap');
+
+:root{
+  --primary-font: 'Roboto', sans-serif;
+  --headings-fonts: 'Rubik', sans-serif;
+  --primary-color: #004AAD;
+}
+
+
 $textAlignValues: ('left', 'right', 'center', 'justify');
 @each $textAlign in $textAlignValues {
     .u-text-#{$textAlign}{
@@ -8,3 +17,26 @@ $textAlignValues: ('left', 'right', 'center', 'justify');
 // .u-text-left {
 // text-align : left !important;
 // }
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    & p{
+      color: #737373
+    }
+  }
+  h1,h2,h3,h4{
+    font-family: var(--headings-fonts);
+  }
+  .hide{
+    display: none;
+  }
