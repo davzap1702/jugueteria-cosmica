@@ -1,42 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Rubik:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Rubik:wght@300;400;500;700&display=swap");
 
-:root{
-  --primary-font: 'Roboto', sans-serif;
-  --headings-fonts: 'Rubik', sans-serif;
-  --primary-color: #004AAD;
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --headings-fonts: "Rubik", sans-serif;
+  --primary-color: #004aad;
 }
 
-
-$textAlignValues: ('left', 'right', 'center', 'justify');
+$textAlignValues: ("left", "right", "center", "justify");
 @each $textAlign in $textAlignValues {
-    .u-text-#{$textAlign}{
-        text-align: #{$textAlign}!important;
-    }
+  .u-text-#{$textAlign} {
+    text-align: #{$textAlign} !important;
+  }
+}
+$sizes: 4rem, 6rem, 8rem;
+@each $size in $sizes {
+  .u-mt-#{$size} {
+    margin-top: $size;
+  }
+  .u-mb-#{$size} {
+    margin-bottom: $size;
+  }
 }
 
 // .u-text-left {
 // text-align : left !important;
 // }
 .container {
-    max-width: 1200px;
-    width: 95%;
-    margin: 0 auto;
-  }
+  max-width: 1500px;
+  width: 95%;
+  margin: 0 auto;
+}
 
-  html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  & p {
+    color: #737373;
   }
-  body {
-    font-size: 1.6rem;
-    font-family: var(--primary-font);
-    & p{
-      color: #737373
-    }
-  }
-  h1,h2,h3,h4{
-    font-family: var(--headings-fonts);
-  }
-  .hide{
-    display: none;
-  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--headings-fonts);
+}
+.hide {
+  display: none;
+}
