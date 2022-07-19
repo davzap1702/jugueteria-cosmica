@@ -15,7 +15,7 @@
     }
   }
   &__background {
-    background-image: url(/img/hero/family.jpg);
+    background-image: url(.././img/hero/family.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,13 +27,13 @@
     }
   }
   &__wave {
-    background-image: url(/img/hero/wave-mobile.svg);
+    background-image: url(.././img/hero/wave-mobile.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70rem;
     @media (min-width: 1020px) {
-      background-image: url(/img/hero/wave.svg);
+      background-image: url(.././img/hero/wave.svg);
       height: 70rem;
     }
   }
