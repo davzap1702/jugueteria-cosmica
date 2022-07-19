@@ -643,12 +643,13 @@ template {
 }
 
 .category-cards-section {
+  margin: 10rem auto;
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 670px) {
   .category-cards-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -674,6 +675,11 @@ template {
   width: 30rem;
   box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
   border-radius: 0.5rem;
+  transition: 300ms;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 .card__header {
   height: 20rem;
@@ -684,6 +690,11 @@ template {
 .card__header img {
   width: 30rem;
   height: 20rem;
+  border-radius: 0.5rem;
+  transition: 300ms;
+}
+.card__header img:hover {
+  transform: scale(1.03);
 }
 .card__description {
   padding: 1rem;
@@ -691,10 +702,17 @@ template {
 .card__description h2 {
   margin-top: 0;
 }
+.card__description p {
+  text-align: center;
+}
 .card__footer {
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
   padding: 0.1rem 3rem;
+  transition: 300ms;
+}
+.card__footer:hover {
+  transform: scale(1.03);
 }
 .card__footer h3 {
   color: white;
