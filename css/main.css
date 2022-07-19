@@ -9,15 +9,10 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --primary-font: "Roboto", sans-serif;
   --headings-fonts: "Rubik", sans-serif;
   --primary-color: #004aad;
-  --secundary-color: #d66406;
 }
 
 .u-text-left {
@@ -644,64 +639,6 @@ template {
   .category {
     margin-top: 7rem;
   }
-}
-
-.category-cards-section {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-}
-@media (min-width: 768px) {
-  .category-cards-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-}
-@media (min-width: 1020px) {
-  .category-cards-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-  }
-}
-@media (min-width: 1300px) {
-  .category-cards-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-  }
-}
-
-.card {
-  width: 30rem;
-  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-}
-.card__header {
-  height: 20rem;
-  border-radius: 0.5rem;
-  margin-bottom: 0;
-  transition: 300ms;
-}
-.card__header img {
-  width: 30rem;
-  height: 20rem;
-}
-.card__description {
-  padding: 1rem;
-}
-.card__description h2 {
-  margin-top: 0;
-}
-.card__footer {
-  background-color: var(--secundary-color);
-  border-radius: 0.5rem;
-  padding: 0.1rem 3rem;
-}
-.card__footer h3 {
-  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
