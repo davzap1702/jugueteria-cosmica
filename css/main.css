@@ -560,7 +560,7 @@ template {
   }
 }
 .hero__background {
-  background-image: url(/img/hero/family.jpg);
+  background-image: url(.././img/hero/family.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -574,7 +574,7 @@ template {
   }
 }
 .hero__wave {
-  background-image: url(/img/hero/wave-mobile.svg);
+  background-image: url(.././img/hero/wave-mobile.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -582,7 +582,7 @@ template {
 }
 @media (min-width: 1020px) {
   .hero__wave {
-    background-image: url(/img/hero/wave.svg);
+    background-image: url(.././img/hero/wave.svg);
     height: 70rem;
   }
 }
@@ -633,7 +633,12 @@ template {
 }
 
 .category {
-  margin-top: 11rem;
+  margin-top: 17rem;
+}
+@media (min-width: 1020px) {
+  .category {
+    margin-top: 7rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
