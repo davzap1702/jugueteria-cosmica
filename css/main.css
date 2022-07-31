@@ -14,6 +14,7 @@ body {
   --headings-fonts: "Rubik", sans-serif;
   --primary-color: #004aad;
   --secondary-color: #ff8b33;
+  --grey-section-color: rgb(244, 244, 244);
 }
 
 .u-text-left {
@@ -880,6 +881,62 @@ template {
     transform: translateX(0%);
     opacity: 1;
   }
+}
+
+.main-footer {
+  background-color: var(--grey-section-color);
+}
+.main-footer h3 {
+  color: #737373;
+  text-transform: uppercase;
+}
+.main-footer__header {
+  padding: 3rem 0;
+  text-align: center;
+}
+.main-footer__header hr {
+  border: solid 0.2px #e1e1e1;
+  margin: 2rem auto;
+}
+.main-footer__header--social-media {
+  margin: 3rem auto;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  font-size: 2rem;
+  color: #737373;
+}
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main-footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+.main-footer article {
+  margin: 1.5rem 0;
+}
+.main-footer article a {
+  text-decoration: none;
+  color: #737373;
+}
+.main-footer article li {
+  list-style: none;
+}
+.main-footer article ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.main-footer article i {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
