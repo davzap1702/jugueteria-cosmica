@@ -60,6 +60,20 @@ document.querySelector('header').appendChild(actionsContainer);
 navContainer.classList.add('main-header__nav-container');
 actionsContainer.classList.add('main-header__actions-container');
 
+//scroll to IDs
+
+function scroll(){
+    const element = document.querySelector('#category-cards');
+    const offset = 50;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+}
+window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+});
+
 
 
 
