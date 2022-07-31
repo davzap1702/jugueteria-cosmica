@@ -60,20 +60,15 @@ document.querySelector('header').appendChild(actionsContainer);
 navContainer.classList.add('main-header__nav-container');
 actionsContainer.classList.add('main-header__actions-container');
 
-//scroll to IDs
+//scroll to the categories section
 
-function scroll(){
-    const element = document.querySelector('#category-cards');
-    const offset = 50;
-    const bodyRect = document.body.getBoundingClientRect().top;
-    const elementPosition = elementRect - bodyRect;
-    const offsetPosition = elementPosition - offset;
+const categories = document.querySelector('#category-cards');
+
+function scrollIntoCategory(){
+    categories.scrollIntoView({
+        behavior: "smooth"
+    },true);
 }
-window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth"
-});
-
 
 
 

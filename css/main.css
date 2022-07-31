@@ -533,6 +533,9 @@ template {
   border-radius: 0.5rem;
   transition: 300ms;
 }
+.text-btn:hover {
+  cursor: pointer;
+}
 .text-btn:hover span {
   padding: 0 2rem;
 }
