@@ -20,6 +20,7 @@
     border-radius: .5rem;
     transition: 300ms;
     &:hover{
+        cursor: pointer;
         span{
             padding: 0 2rem;
         }
