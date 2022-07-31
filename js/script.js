@@ -1,73 +1,103 @@
+//get header
+const headerUrl = 'templates/header.html';
+fetch(headerUrl)
+    .then(res => res.text())
+    .then(data => loadHeader(data));
+
+function loadHeader(data) {
+    document.body.insertAdjacentHTML('afterbegin', data);
+    enableHambugerMenu();
+    changeHeaderStructure();
+    enableSearcInput();
+}
+
+//get footer
+const footerUrl = 'templates/footer.html';
+fetch(footerUrl)
+    .then(res => res.text())
+    .then(data => loadFooter(data));
+function loadFooter(data){
+    document.body.insertAdjacentHTML('beforeend', data);
+}
+
 //Hamburguer menu functionality
-const hamburgerMenu = document.querySelector('#hamburger-menu');
-const linkNavigation = document.querySelector('.main-nav__list');
-hamburgerMenu.addEventListener('click', () => {
-    linkNavigation.classList.toggle('hide');
-});
+function enableHambugerMenu() {
+    const hamburgerMenu = document.querySelector('#hamburger-menu');
+    const linkNavigation = document.querySelector('.main-nav__list');
+    hamburgerMenu.addEventListener('click', () => {
+        linkNavigation.classList.toggle('hide');
+    });
+}
 
 //Search input functionality
-const searchInputContainer = document.querySelector('.main-header__search-form-container');
-const searchInput = document.querySelector('.main-header__search-input');
-const searchIcon = document.querySelector('.fa-magnifying-glass');
+function enableSearcInput() {
+    const linkNavigation = document.querySelector('.main-nav__list');
+    const searchInputContainer = document.querySelector('.main-header__search-form-container');
+    const searchInput = document.querySelector('.main-header__search-input');
+    const searchIcon = document.querySelector('.fa-magnifying-glass');
 
-document.addEventListener('click', e => {
-    if (!searchInputContainer.classList.contains('hide')) {
-        if (e.target != searchInput) {
-            searchInputContainer.classList.add('hide');
-        }
-    }
-    if (e.target == searchIcon) {
-        if (searchInputContainer.classList.contains('hide')) {
-            if (!linkNavigation.classList.contains('hide')) {
-                searchInputContainer.classList.remove('hide');
-                linkNavigation.classList.add('hide');
-            } else {
-                searchInputContainer.classList.remove('hide');
+    document.addEventListener('click', e => {
+        if (!searchInputContainer.classList.contains('hide')) {
+            if (e.target != searchInput) {
+                searchInputContainer.classList.add('hide');
             }
-        } else {
-            searchInputContainer.classList.add('hide');
         }
-    }
-});
+        if (e.target == searchIcon) {
+            if (searchInputContainer.classList.contains('hide')) {
+                if (!linkNavigation.classList.contains('hide')) {
+                    searchInputContainer.classList.remove('hide');
+                    linkNavigation.classList.add('hide');
+                } else {
+                    searchInputContainer.classList.remove('hide');
+                }
+            } else {
+                searchInputContainer.classList.add('hide');
+            }
+        }
+    });
+}
 
 
-//Organize the original header structure
+/* Organize the original header structure */
 
 //get all items
 
-const logo = document.querySelector('.main-header__logo-container');
-const nav = document.querySelector('.main-header__main-nav-container');
+function changeHeaderStructure() {
+    const logo = document.querySelector('.main-header__logo-container');
+    const nav = document.querySelector('.main-header__main-nav-container');
 
-const searchForm = document.querySelector('.main-header__search-form-container.hide');
-const searchicon = document.querySelector('.main-header__search-form-icon');
-const cart = document.querySelector('.main-header__cart-button-container');
-const hamIcon = document.querySelector('.main-header__hamburger-button-container');
+    const searchForm = document.querySelector('.main-header__search-form-container.hide');
+    const searchicon = document.querySelector('.main-header__search-form-icon');
+    const cart = document.querySelector('.main-header__cart-button-container');
+    const hamIcon = document.querySelector('.main-header__hamburger-button-container');
 
-const navContainer = document.createElement('div');
-const actionsContainer = document.createElement('div');
+    const navContainer = document.createElement('div');
+    const actionsContainer = document.createElement('div');
 
-//insert items into each container
-navContainer.appendChild(logo);
-navContainer.appendChild(nav);
-document.querySelector('header').insertAdjacentElement('afterbegin',navContainer);
+    //insert items into each container
+    navContainer.appendChild(logo);
+    navContainer.appendChild(nav);
+    document.querySelector('header').insertAdjacentElement('afterbegin', navContainer);
 
-actionsContainer.appendChild(searchForm);
-actionsContainer.appendChild(searchicon);
-actionsContainer.appendChild(cart);
-actionsContainer.appendChild(hamIcon);
-document.querySelector('header').appendChild(actionsContainer);
+    actionsContainer.appendChild(searchForm);
+    actionsContainer.appendChild(searchicon);
+    actionsContainer.appendChild(cart);
+    actionsContainer.appendChild(hamIcon);
+    document.querySelector('header').appendChild(actionsContainer);
 
-navContainer.classList.add('main-header__nav-container');
-actionsContainer.classList.add('main-header__actions-container');
+    navContainer.classList.add('main-header__nav-container');
+    actionsContainer.classList.add('main-header__actions-container');
+}
 
 //scroll to the categories section
-
 const categories = document.querySelector('#category-cards');
 
-function scrollIntoCategory(){
-    categories.scrollIntoView({
-        behavior: "smooth"
-    },true);
+if(categories){
+    function scrollIntoCategory() {
+        categories.scrollIntoView({
+            behavior: "smooth"
+        }, true);
+    }
 }
 
 

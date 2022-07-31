@@ -6,12 +6,15 @@
 @use './vendors/normalize';
 
 //components
-@use './components/header';
 @use './components/buttons';
-@use './components/hero';
-@use './components/main';
-@use './components//category-cards';
+@use './components/category-cards';
 @use './components/product-card';
-@use './components/benefits-section';
-@use './components/footer';
-// @use './components/search-input';
+@use './components/inputs';
+
+//layout
+@use './layout/header';
+@use './layout/footer';
+
+//pages
+@use './pages/alta';
+@use './pages/home';
