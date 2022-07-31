@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Juguetería Cósmica | Alta</title>
+  </head>
+  <body>
+    <section class="product-cta">
+      <div class="product-cta__container container">
+        <div class="product-cta__heading">
+          <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt a
+            tenetur quisquam!
+          </p>
+        </div>
+        <div class="product-cta__publish-btn--desktop">
+          <button class="primary-btn-light">Publicar Producto</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-form container">
+      <h2>Ingresa los datos del nuevo producto</h2>
+      <form class="product-form__data">
+        <div class="product-form__wrapper">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Ajedrez" />
+        </div>
+
+        <div class="product-form__wrapper">
+          <label for="precio">Precio</label>
+          <input id="precio" type="number" placeholder="$45.00" />
+        </div>
+
+        <div class="product-form__wrapper">
+          <label for="stock">Stock</label>
+          <input id="stock" type="number" placeholder="60" />
+        </div>
+
+        <div class="product-form__wrapper">
+          <label for="marca">Marca</label>
+          <input id="marca" type="text" placeholder="Hasbro" />
+        </div>
+
+        <div class="product-form__wrapper">
+          <label for="categoria">Categoria</label>
+          <input id="categoria" type="text" placeholder="Juegos de mesa" />
+        </div>
+
+        <div class="product-form__wrapper">
+          <label for="descripcion">Descripción Corta</label>
+          <input id="descripcion" type="text" placeholder="Ajedrez de madera" />
+        </div>
+
+        <div class="product-form__wrapper">
+            <label for="descripcion-larga">Descripción larga</label>
+            <textarea
+              id="descripcion-larga"
+              cols="20"
+              rows="5"
+              placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, provident possimus?"
+            ></textarea>
+        </div>
+        <div class="product-form__envio">
+          <input id="envio" type="checkbox" />
+          <label for="envio">Envio sin cargo</label>
+        </div>
+        <div class="product-form__wrapper">
+          <label for="edad-desde">Edad desde</label>
+          <input type="number" placeholder="18+" />
+        </div>
+
+        <div class="product-form__wrapper">
+          <label for="edad-hasta">Edad hasta</label>
+          <input type="number" placeholder="40+"/>
+        </div>
+
+        <label class="product-form__file-label text-btn" for="file"
+          >Selecciona una foto</label
+        >
+        <input
+          class="product-form__file"
+          id="file"
+          type="file"
+          accept=".jpg, .jpeg, .png"
+        />
+        <div class="product-cta__publish-btn--mobile">
+            <button type="submit" class="primary-btn">Publicar Producto</button>
+          </div>
+      </form>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/bdade64700.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

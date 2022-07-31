@@ -10,7 +10,6 @@
     &:hover{
         background-color: white;
         color: var(--primary-color);
-        cursor: pointer;
     }
 }
 .text-btn{
@@ -34,23 +33,4 @@
     font-weight: bold;
     border: 1px solid var(--primary-color);
     border-radius: .5rem;
-    &:hover{
-        cursor: pointer;
-    }
-}
-
-.primary-btn-light{
-    padding: 1rem 3.2rem;
-    background-color: white;
-    color: var(--primary-color);
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid var(--primary-color);
-    border-radius: .5rem;
-    transition: 300ms;
-    &:hover{
-        background-color: white;
-        opacity: 90%;
-        cursor: pointer;
-    }
 }

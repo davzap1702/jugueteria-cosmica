@@ -1,0 +1,10 @@
+input[type=text],input[type=number],textarea{
+    padding: .6rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #e1e1e1;
+    border-left: 3px solid black;
+    margin : .3rem 0;
+    &:focus{
+        outline: none;
+    }
+}
