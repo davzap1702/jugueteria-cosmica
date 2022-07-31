@@ -833,4 +833,53 @@ template {
   visibility: hidden;
 }
 
+.flexbox-3 {
+  margin: 8rem 0;
+}
+.flexbox-3 h2 {
+  text-align: center;
+  margin-bottom: 9rem;
+  color: #737373;
+  font-size: 3rem;
+}
+.flexbox-3__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .flexbox-3__container {
+    flex-direction: row;
+  }
+}
+.flexbox-3__item {
+  text-align: center;
+}
+.flexbox-3__item p {
+  font-size: 2rem;
+}
+.flexbox-3__item h2 {
+  color: black;
+}
+.flexbox-3__item header {
+  font-size: 7rem;
+  color: var(--secondary-color);
+}
+
+.icons-animation {
+  animation: icon 1.2s ease-in-out;
+}
+@keyframes icon {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
