@@ -9,6 +9,7 @@ function loadHeader(data) {
     enableHambugerMenu();
     changeHeaderStructure();
     enableSearcInput();
+    setActiveLink();
 }
 
 //get footer
@@ -16,7 +17,7 @@ const footerUrl = 'templates/footer.html';
 fetch(footerUrl)
     .then(res => res.text())
     .then(data => loadFooter(data));
-function loadFooter(data){
+function loadFooter(data) {
     document.body.insertAdjacentHTML('beforeend', data);
 }
 
@@ -89,10 +90,22 @@ function changeHeaderStructure() {
     actionsContainer.classList.add('main-header__actions-container');
 }
 
+//set active link
+
+function setActiveLink() {
+    let url = location.href.split('/');
+    const headerLinks = document.querySelectorAll('a.main-nav__link');
+    headerLinks.forEach(link => {
+        if(link.getAttribute('href') === url[3]){
+            link.classList.add('active');
+        }
+    });
+}
+
 //scroll to the categories section
 const categories = document.querySelector('#category-cards');
 
-if(categories){
+if (categories) {
     function scrollIntoCategory() {
         categories.scrollIntoView({
             behavior: "smooth"
