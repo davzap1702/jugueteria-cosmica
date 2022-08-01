@@ -58,7 +58,6 @@ function enableSearcInput() {
     });
 }
 
-
 /* Organize the original header structure */
 
 //get all items
@@ -94,9 +93,15 @@ function changeHeaderStructure() {
 
 function setActiveLink() {
     let url = location.href.split('/');
+    let path;
     const headerLinks = document.querySelectorAll('a.main-nav__link');
+    url.forEach( x =>{
+        if(x.includes('.')){
+            path = x;
+        }
+    });
     headerLinks.forEach(link => {
-        if(link.getAttribute('href') === url[3]){
+        if(link.getAttribute('href') === path){
             link.classList.add('active');
         }
     });
