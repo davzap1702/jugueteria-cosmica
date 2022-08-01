@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Juguetería Cósmica | Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="heading container">
+      <h1>Contáctanos</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+        explicabo aspernatur, maiores dignissimos saepe rem.
+      </p>
+    </div>
+
+    <div class="contact-form container">
+        <form class="contact-form__data">
+            <div class="contact-form__data-wrapper grid-1">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="contact-form__data-wrapper grid-2">
+                <label for="tel">Teléfono</label>
+                <input type="tel" id="tel">
+            </div>
+            <div class="contact-form__data-wrapper grid-3">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email">
+            </div>
+            <div class="contact-form__data-wrapper grid-4">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto">
+            </div>
+            <div class="contact-form__data-wrapper grid-5">
+                <label for="mensaje">Comentarios *</label>
+                <textarea id="mensaje" cols="20" rows="4"></textarea>
+            </div>
+            <button type="submit" class="primary-btn grid-6">Enviar</button>
+        </form>
+        <div class="contact-form__info">
+            <h3>O, puedes contactarnos directamente</h3>
+            <p> <i class="fa-solid fa-at"></i> <a href="mailto:contacto@jugueteriacosmica.com">contacto@jugueteriacosmica.com</a> </p>
+            <p> <i class="fa-solid fa-phone"></i>  +57 320 123 4567 </p>
+            <p> <i class="fa-solid fa-map-pin"></i> Bogotá, Colombia </p>
+        </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/bdade64700.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
