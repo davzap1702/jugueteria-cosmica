@@ -1,25 +1,8 @@
-//get header
-const headerUrl = 'templates/header.html';
-fetch(headerUrl)
-    .then(res => res.text())
-    .then(data => loadHeader(data));
 
-function loadHeader(data) {
-    document.body.insertAdjacentHTML('afterbegin', data);
-    enableHambugerMenu();
-    changeHeaderStructure();
-    enableSearcInput();
-    setActiveLink();
-}
-
-//get footer
-const footerUrl = 'templates/footer.html';
-fetch(footerUrl)
-    .then(res => res.text())
-    .then(data => loadFooter(data));
-function loadFooter(data) {
-    document.body.insertAdjacentHTML('beforeend', data);
-}
+enableHambugerMenu();
+changeHeaderStructure();
+enableSearcInput();
+setActiveLink();
 
 //Hamburguer menu functionality
 function enableHambugerMenu() {
@@ -92,19 +75,17 @@ function changeHeaderStructure() {
 //set active link
 
 function setActiveLink() {
-    let url = location.href.split('/');
-    let path;
+    const title = document.querySelector('head > title');
     const headerLinks = document.querySelectorAll('a.main-nav__link');
-    url.forEach( x =>{
-        if(x.includes('.')){
-            path = x;
+    let titleRef = title.textContent.split(' | ')[1];
+    console.log(titleRef);
+    headerLinks.forEach(x => {
+        if (x.textContent.includes(titleRef)) {
+            x.classList.add('active');
         }
     });
-    headerLinks.forEach(link => {
-        if(link.getAttribute('href') === path){
-            link.classList.add('active');
-        }
-    });
+    console.log(title.textContent);
+    console.log(headerLinks);
 }
 
 //scroll to the categories section
