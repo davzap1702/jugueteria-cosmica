@@ -717,11 +717,22 @@ textarea:focus {
   cursor: pointer;
   color: var(--primary-color);
 }
-.main-header input {
-  width: 50%;
+.main-header .search {
   position: absolute;
-  top: 17%;
+  top: 52%;
+  right: 22.5%;
+}
+@media (min-width: 1070px) {
+  .main-header .search {
+    display: none;
+  }
+}
+.main-header input {
+  width: 60%;
+  position: absolute;
+  top: 50%;
   right: 21%;
+  padding: 1.5rem 4.4rem 2rem 1rem;
 }
 .main-header input:focus {
   outline: 2px solid var(--primary-color);
@@ -786,6 +797,26 @@ textarea:focus {
 .main-nav__list a:hover {
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+@media (min-width: 1070px) {
+  .overlay {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
 }
 
 .active {
