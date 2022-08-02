@@ -78,14 +78,11 @@ function setActiveLink() {
     const title = document.querySelector('head > title');
     const headerLinks = document.querySelectorAll('a.main-nav__link');
     let titleRef = title.textContent.split(' | ')[1];
-    console.log(titleRef);
     headerLinks.forEach(x => {
         if (x.textContent.includes(titleRef)) {
             x.classList.add('active');
         }
     });
-    console.log(title.textContent);
-    console.log(headerLinks);
 }
 
 //scroll to the categories section
@@ -98,6 +95,15 @@ if (categories) {
         }, true);
     }
 }
+
+//The logo should take to the home page
+function logoFunctionality(){
+    const logo = document.querySelector('.main-header__logo-container > img');
+    logo.addEventListener('click', () => {
+        location.href = 'index.html';
+    });
+}
+logoFunctionality();
 
 
 
