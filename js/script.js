@@ -95,9 +95,18 @@ if (categories) {
         }, true);
     }
 }
+//
+const icons = document.querySelectorAll('i');
+icons.forEach(icon => {
+    icon.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            e.target.click();
+        }
+    });
+});
 
 //The logo should take to the home page
-function logoFunctionality(){
+function logoFunctionality() {
     const logo = document.querySelector('.main-header__logo-container > img');
     logo.addEventListener('click', () => {
         location.href = 'index.html';

@@ -850,6 +850,9 @@ textarea:focus {
   font-size: 2rem;
   color: #737373;
 }
+.main-footer__header--social-media a {
+  color: #737373;
+}
 .main-footer__container {
   display: flex;
   flex-direction: column;
@@ -1162,7 +1165,7 @@ textarea:focus {
 }
 .contact-form__info {
   background-color: var(--primary-color);
-  padding: 7rem 6rem;
+  padding: 7rem 1rem;
   border-bottom-right-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
   text-align: center;

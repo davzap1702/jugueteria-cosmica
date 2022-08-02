@@ -5,47 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jugueteria Cosmica | Inicio</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- Preloads -->
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="stylesheet" href="css/main.css" defer/>
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="stylesheet" href="css/main.css" defer />
     <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
-
+    <link rel="prefetch" href="nosotros.html" as="document" />
   </head>
   <body>
     <header id="header" class="main-header container">
       <div class="main-header__logo-container">
-        <img src="img/header/logo.webp" alt="Logo" loading="lazy" />
+        <img
+          tabindex="0"
+          src="img/header/logo.webp"
+          alt="Logo"
+          loading="lazy"
+        />
       </div>
-  
+
       <div class="main-header__search-form-container overlay hide">
         <div class="test">
-
           <input
-          class="main-header__search-input"
-          type="text"
-          placeholder="Mario Bros, Monopatín, etc"
-          id="search-bar"
+            class="main-header__search-input"
+            type="text"
+            placeholder="Mario Bros, Monopatín, etc"
+            id="search-bar"
           />
-          <i class="fa-solid fa-circle-chevron-right search"></i>
+          <i tabindex="0" class="fa-solid fa-circle-chevron-right search"></i>
           <label for="search-bar"></label>
-          
         </div>
       </div>
-  
-      <div  class="main-header__cart-button-container">
+
+      <div class="main-header__cart-button-container">
         <i tabindex="0" class="fa-solid fa-cart-shopping"></i>
       </div>
-  
+
       <div id="hamburger-menu" class="main-header__hamburger-button-container">
-        <i class="fa-solid fa-bars"></i>
+        <i tabindex="0" class="fa-solid fa-bars"></i>
       </div>
-  
+
       <div class="main-header__search-form-icon">
         <i tabindex="0" class="fa-solid fa-magnifying-glass"></i>
       </div>
-  
+
       <div class="main-header__main-nav-container">
         <nav class="main-nav">
           <ul class="main-nav__list u-text-center hide">
@@ -80,7 +82,7 @@
             </p>
             <div class="hero__cta u-mt-4rem">
               <a class="primary-btn" href="">Explorar</a>
-              <a onclick="scrollIntoCategory()" class="text-btn"
+              <a tabindex="0" onclick="scrollIntoCategory()" class="text-btn"
                 >Conocer más
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </a>
@@ -94,7 +96,7 @@
     </section>
 
     <main>
-      <section  class="category-cards-section container">
+      <section class="category-cards-section container">
         <div class="cat-card">
           <div class="cat-card__header">
             <img
@@ -189,7 +191,7 @@
 
         <div class="cards-container container">
           <div class="card__carousel-arrow">
-            <i class="fa-solid fa-angle-left"></i>
+            <i tabindex="0" class="fa-solid fa-angle-left"></i>
           </div>
 
           <div class="cards-slider">
@@ -315,7 +317,7 @@
             </div>
           </div>
           <div class="card__carousel-arrow">
-            <i class="fa-solid fa-angle-right"></i>
+            <i tabindex="0" class="fa-solid fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -368,10 +370,18 @@
     <footer id="footer" class="main-footer">
       <header class="main-footer__header container">
         <div class="main-footer__header--social-media">
-          <i class="fa-brands fa-facebook-messenger"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <a href="">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
         </div>
         <div class="main-footer__header--description">
           <p>
@@ -379,16 +389,14 @@
             placeat quisquam dignissimos, porro velit perspiciatis.
           </p>
         </div>
-        <hr>
+        <hr />
       </header>
       <div class="main-footer__container container">
-  
         <article>
           <h3>Juguetería Cósmica</h3>
           <p>
-            Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Nam nihil error reiciendis nesciunt
-            animi, deserunt laborum asperiores cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nihil
+            error reiciendis nesciunt animi, deserunt laborum asperiores cum.
           </p>
         </article>
         <article>
@@ -412,9 +420,14 @@
         </article>
         <article>
           <h3>Contactános</h3>
-          <p> <i class="fa-solid fa-map-pin"></i> Bogotá, Colombia </p>
-          <p> <i class="fa-solid fa-at"></i> <a href="mailto:contacto@jugueteriacosmica.com">contacto@jugueteriacosmica.com</a> </p>
-          <p> <i class="fa-solid fa-phone"></i>  +57 320 123 4567 </p>
+          <p><i class="fa-solid fa-map-pin"></i> Bogotá, Colombia</p>
+          <p>
+            <i class="fa-solid fa-at"></i>
+            <a href="mailto:contacto@jugueteriacosmica.com"
+              >contacto@jugueteriacosmica.com</a
+            >
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +57 320 123 4567</p>
         </article>
       </div>
     </footer>

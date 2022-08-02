@@ -6,41 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Juguetería Cósmica | Contacto</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header id="header" class="main-header container">
       <div class="main-header__logo-container">
-        <img src="img/header/logo.webp" alt="Logo" loading="lazy" />
+        <img
+          tabindex="0"
+          src="img/header/logo.webp"
+          alt="Logo"
+          loading="lazy"
+        />
       </div>
-  
+
       <div class="main-header__search-form-container overlay hide">
         <div class="test">
-
           <input
-          class="main-header__search-input"
-          type="text"
-          placeholder="Mario Bros, Monopatín, etc"
-          id="search-bar"
+            class="main-header__search-input"
+            type="text"
+            placeholder="Mario Bros, Monopatín, etc"
+            id="search-bar"
           />
-          <i class="fa-solid fa-circle-chevron-right search"></i>
+          <i tabindex="0" class="fa-solid fa-circle-chevron-right search"></i>
           <label for="search-bar"></label>
-          
         </div>
       </div>
-  
+
       <div class="main-header__cart-button-container">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i tabindex="0" class="fa-solid fa-cart-shopping"></i>
       </div>
-  
+
       <div id="hamburger-menu" class="main-header__hamburger-button-container">
-        <i class="fa-solid fa-bars"></i>
+        <i tabindex="0" class="fa-solid fa-bars"></i>
       </div>
-  
+
       <div class="main-header__search-form-icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i tabindex="0" class="fa-solid fa-magnifying-glass"></i>
       </div>
-  
+
       <div class="main-header__main-nav-container">
         <nav class="main-nav">
           <ul class="main-nav__list u-text-center hide">
@@ -69,44 +72,56 @@
     </div>
 
     <div class="contact-form container">
-        <form class="contact-form__data">
-            <div class="contact-form__data-wrapper grid-1">
-                <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre">
-            </div>
-            <div class="contact-form__data-wrapper grid-2">
-                <label for="tel">Teléfono</label>
-                <input type="tel" id="tel">
-            </div>
-            <div class="contact-form__data-wrapper grid-3">
-                <label for="email">Correo electrónico *</label>
-                <input type="email" id="email">
-            </div>
-            <div class="contact-form__data-wrapper grid-4">
-                <label for="asunto">Asunto</label>
-                <input type="text" id="asunto">
-            </div>
-            <div class="contact-form__data-wrapper grid-5">
-                <label for="mensaje">Comentarios *</label>
-                <textarea id="mensaje" cols="20" rows="4"></textarea>
-            </div>
-            <button type="submit" class="primary-btn grid-6">Enviar</button>
-        </form>
-        <div class="contact-form__info">
-            <h3>O, puedes contactarnos directamente</h3>
-            <p> <i class="fa-solid fa-at"></i> <a href="mailto:contacto@jugueteriacosmica.com">contacto@jugueteriacosmica.com</a> </p>
-            <p> <i class="fa-solid fa-phone"></i>  +57 320 123 4567 </p>
-            <p> <i class="fa-solid fa-map-pin"></i> Bogotá, Colombia </p>
+      <form class="contact-form__data">
+        <div class="contact-form__data-wrapper grid-1">
+          <label for="nombre">Nombre *</label>
+          <input type="text" id="nombre" />
         </div>
+        <div class="contact-form__data-wrapper grid-2">
+          <label for="tel">Teléfono</label>
+          <input type="tel" id="tel" />
+        </div>
+        <div class="contact-form__data-wrapper grid-3">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="contact-form__data-wrapper grid-4">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" />
+        </div>
+        <div class="contact-form__data-wrapper grid-5">
+          <label for="mensaje">Comentarios *</label>
+          <textarea id="mensaje" cols="20" rows="4"></textarea>
+        </div>
+        <button type="submit" class="primary-btn grid-6">Enviar</button>
+      </form>
+      <div class="contact-form__info">
+        <h3>O, puedes contactarnos directamente</h3>
+        <p>
+          <i class="fa-solid fa-at"></i>
+          <a href="mailto:contacto@jugueteriacosmica.com"
+            >contacto@jugueteriacosmica.com</a
+          >
+        </p>
+        <p><i class="fa-solid fa-phone"></i> +57 320 123 4567</p>
+        <p><i class="fa-solid fa-map-pin"></i> Bogotá, Colombia</p>
+      </div>
     </div>
-
     <footer id="footer" class="main-footer">
       <header class="main-footer__header container">
         <div class="main-footer__header--social-media">
-          <i class="fa-brands fa-facebook-messenger"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <a href="">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
         </div>
         <div class="main-footer__header--description">
           <p>
@@ -114,16 +129,14 @@
             placeat quisquam dignissimos, porro velit perspiciatis.
           </p>
         </div>
-        <hr>
+        <hr />
       </header>
       <div class="main-footer__container container">
-  
         <article>
           <h3>Juguetería Cósmica</h3>
           <p>
-            Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Nam nihil error reiciendis nesciunt
-            animi, deserunt laborum asperiores cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nihil
+            error reiciendis nesciunt animi, deserunt laborum asperiores cum.
           </p>
         </article>
         <article>
@@ -147,9 +160,14 @@
         </article>
         <article>
           <h3>Contactános</h3>
-          <p> <i class="fa-solid fa-map-pin"></i> Bogotá, Colombia </p>
-          <p> <i class="fa-solid fa-at"></i> <a href="mailto:contacto@jugueteriacosmica.com">contacto@jugueteriacosmica.com</a> </p>
-          <p> <i class="fa-solid fa-phone"></i>  +57 320 123 4567 </p>
+          <p><i class="fa-solid fa-map-pin"></i> Bogotá, Colombia</p>
+          <p>
+            <i class="fa-solid fa-at"></i>
+            <a href="mailto:contacto@jugueteriacosmica.com"
+              >contacto@jugueteriacosmica.com</a
+            >
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +57 320 123 4567</p>
         </article>
       </div>
     </footer>
