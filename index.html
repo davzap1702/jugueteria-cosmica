@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
     <title>Jugueteria Cosmica | Inicio</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Preloads -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css" defer/>
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
   </head>
   <body>
     <header id="header" class="main-header container">
@@ -416,8 +422,8 @@
       src="https://kit.fontawesome.com/bdade64700.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/script.js"></script>
-    <script src="js/cards.js"></script>
-    <script src="js/flexbox-3-animation.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/cards.js" defer></script>
+    <script src="js/flexbox-3-animation.js" defer></script>
   </body>
 </html>
