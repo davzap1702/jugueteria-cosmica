@@ -1146,4 +1146,70 @@ textarea:focus {
   margin: 2.5rem 0;
 }
 
+.about-hero {
+  background-image: url(.././img/nosotros/bg-heading.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 3rem 0 3rem 0;
+}
+@media (min-width: 768px) {
+  .about-hero {
+    background-position: center;
+    background-size: contain;
+    height: 30rem;
+  }
+}
+.about-hero__heading {
+  padding: 6rem 0;
+}
+.about-hero__heading h1 {
+  font-size: 4rem;
+}
+.about-hero__heading p {
+  font-size: 1.8rem;
+}
+@media (min-width: 1200px) {
+  .about-hero__heading {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+}
+.about-hero span {
+  color: #023e8a;
+}
+
+.about-content {
+  padding: 3rem 2rem;
+}
+@media (min-width: 1200px) {
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+.about-content h2 {
+  margin: 5rem auto;
+}
+.about-content p {
+  color: rgb(186, 186, 186);
+}
+.about-content__info i {
+  font-size: 3.3rem;
+  color: #588157;
+}
+.about-content__picture img {
+  margin: 4rem 0;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .about-content__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+.about-hero {
+  background-image: url(.././img/nosotros/bg-heading.svg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 3rem 0 3rem 0;
+  @media (min-width: 768px){
+    background-position: center;
+    background-size: contain;
+    height: 30rem;
+  }
+  &__heading {
+      padding: 6rem 0;
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    @media (min-width:1200px){
+        display: grid;
+        grid-template-columns: 50%;
+    }
+  }
+  span {
+    color: #023e8a;
+  }
+}
+
+.about-content {
+  padding: 3rem 2rem;
+  @media (min-width: 1200px){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+  h2 {
+    margin: 5rem auto;
+  }
+  p {
+    color: rgb(186, 186, 186);
+  }
+  &__info {
+    i {
+      font-size: 3.3rem;
+      color: #588157;
+    }
+  }
+  &__picture{
+    img{
+        margin: 4rem 0;
+        width: 100%;
+        border-radius: .5rem;
+    }
+  }
+  &__container{
+
+    @media (min-width: 768px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+  }
+}
