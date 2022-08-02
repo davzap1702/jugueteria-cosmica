@@ -9,6 +9,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 :root {
   --primary-font: "Roboto", sans-serif;
   --headings-fonts: "Rubik", sans-serif;
@@ -701,6 +705,7 @@ textarea:focus {
 }
 .main-header img {
   width: 15rem;
+  height: auto;
 }
 @media (min-width: 768px) {
   .main-header img {
@@ -973,7 +978,7 @@ textarea:focus {
   }
 }
 .hero__background {
-  background-image: url(.././img/hero/family.jpg);
+  background-image: url(.././img/hero/family.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
