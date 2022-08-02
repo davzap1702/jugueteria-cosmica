@@ -1,7 +1,7 @@
 //contact form validations.
 
 const regExp = {
-    nombre: /^[A-ZÁÉÍÚÓÑ][a-záéíóúñ]{2,9}$/,
+    nombre: /^[A-ZÁÉÍÚÓÑ][A-ZÁÉÍÓÚa-záéíóúñ\s?]{2,20}$/,
     tel: /^\d{0,10}$/,
     email: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}$/,
     asunto: /^[a-záéíóúñÁÉÍÓÚA-Z0-9\s?.,_-¿\?!¡\(\):="'\/$%#*;<>&´]{0,40}$/,
