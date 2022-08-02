@@ -19,6 +19,7 @@ function enableSearcInput() {
     const searchInputContainer = document.querySelector('.main-header__search-form-container');
     const searchInput = document.querySelector('.main-header__search-input');
     const searchIcon = document.querySelector('.fa-magnifying-glass');
+    const searchButton = document.querySelector('.fa-circle-chevron-right search');
 
     document.addEventListener('click', e => {
         if (!searchInputContainer.classList.contains('hide')) {
@@ -37,6 +38,7 @@ function enableSearcInput() {
             } else {
                 searchInputContainer.classList.add('hide');
             }
+            searchInput.focus();
         }
     });
 }

@@ -38,10 +38,15 @@
   }
   .search{
     position: absolute;
-    top: 52%;
+    top: 51.5%;
     right: 22.5%;
     @media (min-width: 1070px){
-      display: none;
+      top: 22.5%;
+      right: 1.7%;
+      opacity: 50%;
+      &:hover{
+        opacity: 100%;
+      }
     }
   }
   input {
@@ -49,7 +54,7 @@
     position: absolute;
     top: 50%;
     right: 21%;
-    padding: 1.5rem 4.4rem 2rem 1rem;
+    padding: 1.5rem 4.3rem 1.5rem 1rem;
     
     &:focus{
       outline: 2px solid var(--primary-color);
