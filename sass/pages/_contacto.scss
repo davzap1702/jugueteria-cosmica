@@ -1,6 +1,9 @@
 .heading {
   text-align: center;
   margin: 6rem auto;
+  h1{
+    font-size: 4.4rem;
+  }
 }
 
 .contact-form {
@@ -36,6 +39,7 @@
       }
     }
     @media (min-width: 1200px) {
+      width: 100%;
       border-top-right-radius: 0.7rem;
       border-top-left-radius: 0rem;
       border-bottom-right-radius: 0.7rem;
@@ -53,20 +57,38 @@
   }
   &__info {
     background-color: var(--primary-color);
-    padding: 7rem 1rem;
+    padding: 10rem 1rem;
     border-bottom-right-radius: 0.7rem;
     border-bottom-left-radius: 0.7rem;
     text-align: center;
-    @media (min-width: 1200px) {
-      border-bottom-right-radius: 0rem;
-      border-bottom-left-radius: 0.7rem;
-      border-top-left-radius: 0.7rem;
-    }
     h3,
     p,
     a {
       color: white;
       margin: 2.5rem 0;
     }
+    @media (min-width: 768px){
+      h3{
+        font-size: 3rem;
+      }
+    }
+    @media (min-width: 1200px) {
+      width: 100%;
+      border-bottom-right-radius: 0rem;
+      border-bottom-left-radius: 0.7rem;
+      border-top-left-radius: 0.7rem;
+      h3{
+        font-size: 4rem;
+      }
+    }
   }
+}
+
+.alert{
+  color: var(--alert-color);
+  margin: 0;
+  font-size: 1.3rem;
+}
+.alert-bg{
+  background-color: #f08080;
 }

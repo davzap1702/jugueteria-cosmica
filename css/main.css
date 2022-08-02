@@ -18,6 +18,7 @@ img {
   --primary-color: #004aad;
   --secondary-color: #625447;
   --grey-section-color: rgb(249, 249, 249);
+  --alert-color: #9d0208;
 }
 
 .u-text-left {
@@ -463,6 +464,16 @@ template {
   cursor: pointer;
 }
 
+.disabled-btn {
+  color: black;
+  background-color: grey;
+}
+.disabled-btn:hover {
+  color: black;
+  background-color: grey;
+  cursor: auto;
+}
+
 .category-cards-section {
   margin: 10rem auto;
   display: grid;
@@ -723,12 +734,17 @@ textarea:focus {
 }
 .main-header .search {
   position: absolute;
-  top: 52%;
+  top: 51.5%;
   right: 22.5%;
 }
 @media (min-width: 1070px) {
   .main-header .search {
-    display: none;
+    top: 22.5%;
+    right: 1.7%;
+    opacity: 50%;
+  }
+  .main-header .search:hover {
+    opacity: 100%;
   }
 }
 .main-header input {
@@ -736,7 +752,7 @@ textarea:focus {
   position: absolute;
   top: 50%;
   right: 21%;
-  padding: 1.5rem 4.4rem 2rem 1rem;
+  padding: 1.5rem 4.3rem 1.5rem 1rem;
 }
 .main-header input:focus {
   outline: 2px solid var(--primary-color);
@@ -1105,6 +1121,9 @@ textarea:focus {
   text-align: center;
   margin: 6rem auto;
 }
+.heading h1 {
+  font-size: 4.4rem;
+}
 
 .contact-form {
   padding: 3rem 4rem;
@@ -1148,6 +1167,7 @@ textarea:focus {
 }
 @media (min-width: 1200px) {
   .contact-form__data {
+    width: 100%;
     border-top-right-radius: 0.7rem;
     border-top-left-radius: 0rem;
     border-bottom-right-radius: 0.7rem;
@@ -1165,23 +1185,42 @@ textarea:focus {
 }
 .contact-form__info {
   background-color: var(--primary-color);
-  padding: 7rem 1rem;
+  padding: 10rem 1rem;
   border-bottom-right-radius: 0.7rem;
   border-bottom-left-radius: 0.7rem;
   text-align: center;
-}
-@media (min-width: 1200px) {
-  .contact-form__info {
-    border-bottom-right-radius: 0rem;
-    border-bottom-left-radius: 0.7rem;
-    border-top-left-radius: 0.7rem;
-  }
 }
 .contact-form__info h3,
 .contact-form__info p,
 .contact-form__info a {
   color: white;
   margin: 2.5rem 0;
+}
+@media (min-width: 768px) {
+  .contact-form__info h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-form__info {
+    width: 100%;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+  }
+  .contact-form__info h3 {
+    font-size: 4rem;
+  }
+}
+
+.alert {
+  color: var(--alert-color);
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.alert-bg {
+  background-color: #f08080;
 }
 
 .about-hero {

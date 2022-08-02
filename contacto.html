@@ -76,22 +76,27 @@
         <div class="contact-form__data-wrapper grid-1">
           <label for="nombre">Nombre *</label>
           <input type="text" id="nombre" />
+          <p class="alert hide">Ingresa entre 3 y 10 caracteres <br>Este campo es obligatorio </p>
         </div>
         <div class="contact-form__data-wrapper grid-2">
           <label for="tel">Teléfono</label>
           <input type="tel" id="tel" />
+          <p class="alert hide">Solo se permiten numeros <br>Ingresa max 10 números</p>
         </div>
         <div class="contact-form__data-wrapper grid-3">
           <label for="email">Correo electrónico *</label>
           <input type="email" id="email" />
+          <p class="alert hide">El formato de correo es inválido <br>Este campo es obligatorio</p>
         </div>
         <div class="contact-form__data-wrapper grid-4">
           <label for="asunto">Asunto</label>
           <input type="text" id="asunto" />
+          <p class="alert hide">No se permiten más de 20 caracteres</p>
         </div>
         <div class="contact-form__data-wrapper grid-5">
           <label for="mensaje">Comentarios *</label>
           <textarea id="mensaje" cols="20" rows="4"></textarea>
+          <p class="alert hide">Ingresa mínimo 10 caracteres y máximo 300 carácteres <br>Este campo es obligatorio</p>
         </div>
         <button type="submit" class="primary-btn grid-6">Enviar</button>
       </form>
@@ -172,6 +177,7 @@
       </div>
     </footer>
 
+    <script src="js/validations.js"></script>
     <script
       src="https://kit.fontawesome.com/bdade64700.js"
       crossorigin="anonymous"
