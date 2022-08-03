@@ -71,11 +71,7 @@ submitBtn.addEventListener('click', e => {
             input.classList.add('alert-bg');
             submit();
         }
-        if(input.value.length > 0){
-            setTimeout(() => {
-                location.reload();
-            }, 1000);
-        }
+        //Aqui va el código si las validaciónes son correctas
     });
 
 });
