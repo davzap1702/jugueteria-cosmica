@@ -54,10 +54,10 @@
               <a class="main-nav__link" href="alta.html">Alta</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="nosotros.html">Nosotros</a>
+              <a class="main-nav__link" href="contacto.html">Contacto</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="contacto.html">Contacto</a>
+              <a class="main-nav__link" href="nosotros.html">Nosotros</a>
             </li>
           </ul>
         </nav>
@@ -75,28 +75,42 @@
       <form class="contact-form__data">
         <div class="contact-form__data-wrapper grid-1">
           <label for="nombre">Nombre *</label>
-          <input type="text" id="nombre" />
-          <p class="alert hide">Ingresa entre 3 y 10 caracteres <br>Este campo es obligatorio </p>
+          <input type="text" id="nombre" placeholder="John Smith" />
+          <p class="alert hide">
+            Ingresa entre 3 y 20 caracteres <br />Este campo es obligatorio <br>Inicia tu nombre con mayúscula
+          </p>
         </div>
         <div class="contact-form__data-wrapper grid-2">
           <label for="tel">Teléfono</label>
-          <input type="tel" id="tel" />
-          <p class="alert hide">Solo se permiten numeros <br>Ingresa max 10 números</p>
+          <input type="tel" id="tel" placeholder="3201234567" />
+          <p class="alert hide">
+            Solo se permiten numeros <br />Ingresa max 10 números
+          </p>
         </div>
         <div class="contact-form__data-wrapper grid-3">
           <label for="email">Correo electrónico *</label>
-          <input type="email" id="email" />
-          <p class="alert hide">El formato de correo es inválido <br>Este campo es obligatorio</p>
+          <input type="email" id="email" placeholder="correo@dominio.com" />
+          <p class="alert hide">
+            El formato de correo es inválido <br />Este campo es obligatorio
+          </p>
         </div>
         <div class="contact-form__data-wrapper grid-4">
           <label for="asunto">Asunto</label>
-          <input type="text" id="asunto" />
+          <input type="text" id="asunto" placeholder="Solicitud de reembolso" />
           <p class="alert hide">No se permiten más de 20 caracteres</p>
         </div>
         <div class="contact-form__data-wrapper grid-5">
           <label for="mensaje">Comentarios *</label>
-          <textarea id="mensaje" cols="20" rows="4"></textarea>
-          <p class="alert hide">Ingresa mínimo 10 caracteres y máximo 300 carácteres <br>Este campo es obligatorio</p>
+          <textarea
+            id="mensaje"
+            cols="20"
+            rows="4"
+            placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate nemo iusto dolores numquam, ab laudantium labore!"
+          ></textarea>
+          <p class="alert hide">
+            Ingresa mínimo 10 caracteres y máximo 300 carácteres <br />Este
+            campo es obligatorio
+          </p>
         </div>
         <button type="submit" class="primary-btn grid-6">Enviar</button>
       </form>
@@ -113,7 +127,7 @@
       </div>
     </div>
     <footer id="footer" class="main-footer">
-      <header class="main-footer__header container">
+      <div class="main-footer__header container">
         <div class="main-footer__header--social-media">
           <a href="">
             <i class="fa-brands fa-facebook-messenger"></i>
@@ -135,7 +149,7 @@
           </p>
         </div>
         <hr />
-      </header>
+      </div>
       <div class="main-footer__container container">
         <article>
           <h3>Juguetería Cósmica</h3>
