@@ -145,7 +145,7 @@ function deleteCartItems() {
 
 }
 
-if (cards){
+if (cards) {
 
     cards.addEventListener('click', e => {
         e.preventDefault();
@@ -153,9 +153,20 @@ if (cards){
             const item = e.target.parentElement.children[1];
             getItem(item);
         }
+        showNotification();
     });
 }
-
+function showNotification() {
+    const snackBar = document.createElement('div');
+    snackBar.innerHTML = 'Añadido al carrito';
+    snackBar.id = 'snackbar';
+    document.body.appendChild(snackBar);
+    snackBar.className = 'showSnackbar';
+    setTimeout(() => {
+        snackBar.classList.remove('showSnackbar');
+    }, 2200);
+    console.log(snackBar);
+}
 
 
 function getItem(item) {
