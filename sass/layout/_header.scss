@@ -36,15 +36,15 @@
       color: var(--primary-color);
     }
   }
-  .search{
+  .search {
     position: absolute;
     top: 51.5%;
     right: 22.5%;
-    @media (min-width: 1070px){
+    @media (min-width: 1070px) {
       top: 22.5%;
       right: 1.7%;
       opacity: 50%;
-      &:hover{
+      &:hover {
         opacity: 100%;
       }
     }
@@ -55,8 +55,8 @@
     top: 50%;
     right: 21%;
     padding: 1.5rem 4.3rem 1.5rem 1rem;
-    
-    &:focus{
+
+    &:focus {
       outline: 2px solid var(--primary-color);
       border: none;
     }
@@ -64,7 +64,7 @@
       position: relative;
       width: 30rem;
       border: 1px solid #e1e1e1;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       right: auto;
       top: auto;
       padding: 1rem 3rem;
@@ -75,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       flex-direction: row;
       gap: 2rem;
     }
@@ -85,9 +85,52 @@
       display: block;
     }
   }
-  &__hamburger-button-container{
-    @media (min-width: 768px){
+  &__hamburger-button-container {
+    @media (min-width: 768px) {
       display: none;
+    }
+  }
+  &__cart-button-container {
+    position: relative;
+    .badge {
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      padding: 1px 7px;
+      border-radius: 50%;
+      background: var(--secondary-color);
+      color: white;
+      font-size: 1.8rem;
+    }
+  }
+  &__cart-view {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: white;
+    position: absolute;
+    top: 13rem;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    -webkit-box-shadow: -1px -1px 36px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 36px -16px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 36px -16px rgba(0,0,0,0.75);
+    display: none;
+    img {
+      width: 7.5rem;
+    }
+    thead > tr > th {
+      padding: 1.2rem;
+    }
+    tbody > tr > th {
+      padding: 1.2rem;
+      font-weight: normal;
+      width: auto;
+    }
+    @media (min-width: 768px) {
+      right: 1rem;
+      top: 11rem;
     }
   }
 }
@@ -116,24 +159,24 @@
   }
 }
 
- .overlay{
-   position: fixed; 
-   width: 100%; 
-   height: 100%;  
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: rgba(0,0,0,0.5); 
-   z-index: 2;
-   @media (min-width: 1070px){
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  @media (min-width: 1070px) {
     position: relative;
     width: auto;
     height: auto;
     background-color: white;
-   }
- }
+  }
+}
 
-.active{
+.active {
   font-weight: bold;
 }
