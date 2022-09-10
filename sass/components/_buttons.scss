@@ -64,3 +64,19 @@
     cursor:auto;
   }
 }
+
+.btn-cart{
+  border-radius: .4rem;
+  border: none;
+  padding: 1rem 3.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  opacity: 80%;
+  &:hover{
+    cursor: pointer;
+    opacity: 100%;
+  }
+}
