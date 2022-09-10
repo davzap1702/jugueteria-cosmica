@@ -1071,7 +1071,7 @@ textarea:focus {
 }
 @media (min-width: 768px) {
   .hero__background {
-    background-position: right;
+    background-position: left;
   }
 }
 .hero__wave {
